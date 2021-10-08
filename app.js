@@ -45,11 +45,11 @@ mongoose
     });
 
 //Server
-app.listen(3000, () => {
-    console.log('server is running http://localhost:3000');
-});
-
-// var server = app.listen(3000, function () {
-//     var port = server.address().port;
-//     console.log(port);
+// app.listen(3000, () => {
+//     console.log('server is running http://localhost:3000');
 // });
+
+var server = app.listen(3000, function () {
+    var port = server.address().port;
+    console.log(port);
+});
